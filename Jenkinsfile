@@ -1,4 +1,4 @@
-def callMe = library('lib1/vars/callMe.groovy')
+def callMe = library('@script/lib1/vars/callMe.groovy')
 
 pipeline {
   agent none
