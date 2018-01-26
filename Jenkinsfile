@@ -1,4 +1,5 @@
-def callMe = library('@script/lib1/vars/callMe.groovy')
+def rootDir = pwd()
+def callMe = library("${rootDir}@script/lib1/vars/callMe.groovy")
 
 pipeline {
   agent none
