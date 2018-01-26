@@ -1,10 +1,10 @@
 
 pipeline {
   agent none
-  library("lib1")
   stage ("Example") {
     steps {
       script {
+        library("lib1")
         callMe("Mike")
       }
     }
