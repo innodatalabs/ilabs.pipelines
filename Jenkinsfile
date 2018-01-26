@@ -1,3 +1,4 @@
+def callMe = evaluate readTrusted('lib1/callMe.groovy')
 
 pipeline {
   agent none
@@ -5,7 +6,6 @@ pipeline {
     stage ("Example") {
       steps {
         script {
-          library("lib1")
           callMe("Mike")
         }
       }
