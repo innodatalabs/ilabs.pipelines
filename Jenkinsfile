@@ -1,4 +1,4 @@
-def callMe = evaluate readTrusted('lib1/callMe.groovy')
+def callMe = evaluate readTrusted('lib1/vars/callMe.groovy')
 
 pipeline {
   agent none
