@@ -1,7 +1,7 @@
-@Library("lib1") _
 
 pipeline {
   agent none
+  library("lib1")
   stage ("Example") {
     steps {
       script {
