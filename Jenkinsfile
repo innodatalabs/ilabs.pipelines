@@ -8,12 +8,11 @@ pipeline {
         script {
           def x = load('lib1/vars/callMe.groovy')
           x('hoho')
-          x.boo()
         }
         script {
           // callMe("Mike")
           echo "${callMe}"
-          callMe.boo()
+          callMe('down here')
         }
 
 
