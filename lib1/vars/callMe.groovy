@@ -1,5 +1,5 @@
 def foo(message) {
-  echo "foo, ${message}."
+  echo "foo, ${message}. ${props.test}"
 }
 
 def boo(message) {
