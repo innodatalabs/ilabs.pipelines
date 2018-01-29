@@ -1,4 +1,5 @@
 def callMe = evaluate readTrusted('lib1/vars/callMe.groovy')
+def callMe2 = load 'lib1/vars/callMe.groovy'
 
 pipeline {
   agent { node { label 'master'}}
