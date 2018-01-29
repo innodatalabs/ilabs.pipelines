@@ -7,7 +7,7 @@ pipeline {
       steps {
         script {
           callMe("Mike")
-          callMe.delegate(test: '???')
+          callMe.delegate()
         }
       }
     }

@@ -2,7 +2,7 @@ def call(message) {
   echo "Hello, ${message}."
 }
 
-def delegate(Map opt) {
+def delegate(something) {
   pipeline {
     agent none
     stages {
