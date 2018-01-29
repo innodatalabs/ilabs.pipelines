@@ -7,6 +7,7 @@ pipeline {
       steps {
         script {
           // callMe("Mike")
+          echo "${callMe}"
           callMe.boo()
         }
       }
