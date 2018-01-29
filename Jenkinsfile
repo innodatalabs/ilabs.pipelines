@@ -1,7 +1,7 @@
 def callMe = evaluate readTrusted('lib1/vars/callMe.groovy')
 
 pipeline {
-  agent none
+  // agent none
   stages {
     stage ("Example") {
       steps {
