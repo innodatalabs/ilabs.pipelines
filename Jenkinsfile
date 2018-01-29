@@ -6,8 +6,8 @@ pipeline {
     stage ("Example") {
       steps {
         script {
-          callMe("Mike")
-          callMe.delegate()
+          // callMe("Mike")
+          callMe.boo()
         }
       }
     }
