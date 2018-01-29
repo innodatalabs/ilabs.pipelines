@@ -6,8 +6,9 @@ pipeline {
     stage ("Example") {
       steps {
         script {
-          def lib = load('lib1/vars/callMe.groovy')
-          lib.boo()
+          def x = load('lib1/vars/callMe.groovy')
+          x('hoho')
+          x.boo()
         }
         script {
           // callMe("Mike")
