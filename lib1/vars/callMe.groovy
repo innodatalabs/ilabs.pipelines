@@ -8,7 +8,8 @@ def delegate(Map opt) {
     stages {
       stage ('Root') {
         steps {
-          echo "root! ${opt.test}"
+          def opt_test = "Hello"
+          echo "root! ${opt_test}"
         }
       }
     }
