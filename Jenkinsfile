@@ -2,8 +2,8 @@ def callMe = evaluate readTrusted('lib1/vars/callMe.groovy')
 
 pipeline {
   agent { node { label 'master'}}
-  options {
-    string(name: 'test', defaultValue: '')
+  parameters {
+    string(name: 'test', defaultValue: '', description: 'something to test')
   }
   stages {
     stage ("Example") {
