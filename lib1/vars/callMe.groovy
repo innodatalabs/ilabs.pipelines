@@ -3,16 +3,7 @@ def call(message) {
 }
 
 def boo(something) {
-  pipeline {
-    agent none
-    stages {
-      stage ('Root') {
-        steps {
-          echo "root!"
-        }
-      }
-    }
-  }
+  echo "Boo ${something}"
 }
 
 return this
