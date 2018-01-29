@@ -7,12 +7,12 @@ pipeline {
       steps {
         script {
           def x = load('lib1/vars/callMe.groovy')
-          x('hoho')
+          x.foo('hoho')
         }
         script {
           // callMe("Mike")
           echo "${callMe}"
-          callMe('down here')
+          callMe.boo('down here')
         }
 
 
